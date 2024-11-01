@@ -6,7 +6,6 @@ const speakeasy = require('speakeasy');
 
 const secret = speakeasy.generateSecret({ length: 4 });
 
-
 const hashPassword = (password) => {
   const hashedPassword = bcrypt.hashSync(password, salt);
   return hashedPassword;
